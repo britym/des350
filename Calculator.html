@@ -8,18 +8,21 @@
 	background: none;
 	border: none;
 	color:#EC135D;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 900;
-	font-size: 300px;
-	font-style: italic;
-	text-shadow: 9px 20px black;
+	 font-family: 'Courier New', monospace;
+		font-weight: 800;
+	font-size: 200px;
+	text-shadow: 9px 15px black;
 		text-align: center;
-		margin-top: 0px
+		margin-top: 120px;
+		margin-left: -40px;
 	}
 	
-	body{background:linear-gradient(to bottom, #EC135D, black)fixed;
+	body{background-image:url("DES350/calcbackground.png");
+		position: fixed;
+		background-size: 100%;
+		background-repeat: none;
 		margin-top: 250px;
-		margin-left:200px
+		margin-left:300px
 		
 }
 	
@@ -29,20 +32,21 @@
 	left: 0px;
 	z-index: -100}
 	
-	.number{width: 75px; height: 75px}
-	.operator{width: 75px; height: 75px; margin-left: 60px}
-	.clear{width: 75px; height: 75px}
-	.equals {width: 150px; height: 100px; margin-left: 80px; position: fixed; margin-top: -25px}
-	.w{height: 75px;width:  75px}
-	.n{width: 75px; height: 75px; margin-left: 60px}
-	.n:hover{opacity: .27}
-	.w:hover{opacity: .27}
-	.number:hover{opacity: .27}
-	.clear:hover{opacity:.27}
-	.operator:hover{opacity: .27}
-	.equals:hover{opacity: .27}
+	.first{width: 75px; height: 75px; margin-top: 20px; margin-left: 20px; opacity: 65%}
+	.second{width: 75px; height: 75px; margin-left: 20px; margin-top: 20px; opacity: 65%}
+	.operator{width: 75px; height: 75px; margin-top: 20px; margin-left: 20px; opacity:65%}
+	.equals{width: 150px; height: 150px; margin-left: 300px;margin-top: -30px; position: absolute; opacity: 70%}
+	.first:hover{opacity: 100%}
+	.second:hover{opacity:100%}
+	.operator:hover{opacity: 100%}
+	.equals:hover{opacity: 100%}
 	
-	
+	.rotate {animation: rotation 2s;}
+	@keyframes rotation { 0% {transform: rotate(-10deg)}
+    50% {transform: rotate(10deg)}
+    100% {transform: rotate(-10deg)}}
+	.linear {animation-timing-function: linear}
+	.infinite {animation-iteration-count: infinite}
 	
 </style>
 
@@ -64,16 +68,23 @@
 			<div class= "inputRow">
 				
 				<img src="new buttons/1x/Asset 2.png"
-				<input type="button" class="w" value="1" onclick="calculator.display.value +='1'"> 
+				<input type="button" class="first rotate linear infinite" value="1" onclick="calculator.display.value +='1'"> 
 			
 				<img src="new buttons/1x/Asset 3.png"
-				<input type="button" class="w" value="2" onclick="calculator.display.value +='2'">
+				<input type="button" class="first rotate linear infinite" value="2" onclick="calculator.display.value +='2'">
 				
 				<img src="new buttons/1x/Asset 4.png"
-				<input type="button" class="w" value="3" onclick="calculator.display.value +='3'">
+				<input type="button" class="first rotate linear infinite" value="3" onclick="calculator.display.value +='3'">
+					
+				<img src="new buttons/1x/Asset 5.png"
+				<input type="button" class="first rotate linear infinite" value="4" onclick="calculator.display.value +='4'">
 				
-				<img src="new buttons/1x/Asset 14.png"
-				<input type="button" class="n" name="add" value="+" onclick="calculator.display.value +='+'">
+				<img src="new buttons/1x/Asset 6.png"
+				<input type="button" class="first rotate linear infinite" value="5" onclick="calculator.display.value +='5'">
+				
+				<img src="new buttons/1x/Asset 7.png"
+				<input type="button" class="first rotate linear infinite" value="6" onclick="calculator.display.value +='6'">
+				
 				
 			</div>
 			
@@ -81,68 +92,50 @@
 			
 			<div class= "inputRow">
 				
-				<img src="new buttons/1x/Asset 5.png"
-				<input type="button" class="number" value="4" onclick="calculator.display.value +='4'">
+			<img src="new buttons/1x/Asset 8.png"
+				<input type="button" class="second rotate linear infinite" value="7" onclick="calculator.display.value +='7'">
 				
-				<img src="new buttons/1x/Asset 6.png"
-				<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
+				<img src="new buttons/1x/Asset 9.png"
+				<input type="button" class="second rotate linear infinite" value="8" onclick="calculator.display.value +='8'">
 				
-				<img src="new buttons/1x/Asset 7.png"
-				<input type="button" class="number" value="6" onclick="calculator.display.value +='6'">
+				<img src="new buttons/1x/Asset 10.png"
+				<input type="button" class="second rotate linear infinite" value="9" onclick="calculator.display.value +='9'">
+				
+				<img src="new buttons/1x/Asset 11.png"
+				<input type="button" class="second rotate linear infinite" value="0" onclick="calculator.display.value +='0'">
+				
+				<img src="new buttons/1x/Asset 13.png"
+				<input type="button" class="second rotate linear infinite" value="." onclick="calculator.display.value +='.'">
+					
+				<img src="new buttons/1x/Asset 12.png"
+				<input type="button" class="second rotate linear infinite" name="clear" value="C" onclick="calculator.display.value=''">
+				
+				
+				
+			</div>
+			
+			
+			
+			<div class= "inputRow">
+				
+				<img src="new buttons/1x/Asset 14.png"
+				<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value +='+'">
 				
 				<img src="new buttons/1x/Asset 16.png"
 				<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value +='-'">
 				
-			</div>
-			
-			
-			
-			<div class= "inputRow">
-				
-				<img src="new buttons/1x/Asset 8.png"
-				<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
-				
-				<img src="new buttons/1x/Asset 9.png"
-				<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
-				
-				<img src="new buttons/1x/Asset 10.png"
-				<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
-				
 				<img src="new buttons/1x/Asset 15.png"
 				<input type="button" class="operator" name="multiply" value="x" onclick="calculator.display.value +='*'">
-				
-			</div>
-			
-			
-			
-			<div class="input row">
-			
-				<img src="new buttons/1x/Asset 11.png"
-				<input type="button" class="number" value="0" onclick="calculator.display.value +='0'">
-				
-				<img src="new buttons/1x/Asset 13.png"
-				<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
-				
-				<img src="new buttons/1x/Asset 12.png"
-				<input type="button" class="clear" name="clear" value="C" onclick="calculator.display.value=''">
-				
+					
 				<img src="new buttons/1x/Asset 17.png"
 				<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value +='/'">
 				
-				<img src="new buttons/1x/Asset 18.png"
-				<input type="button" class="equals" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">	
+			<img src="new buttons/1x/Asset 31.png"
+				<input type="button" class="equals" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
 				
 				
-			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				</div>
+				
 		
 		</div>
 	</form>
