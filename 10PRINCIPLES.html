@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10PrinciplesofDesign</title>
+<style>
+body {
+    background-color: black
+}
+h1 {
+    font-family: "BACKTO1982";
+    font-size: 90px;
+    margin-left: 30px;
+    color: white;
+    font-kerning: normal;
+    letter-spacing: 4.5px
+}
+h2 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    margin-left: 30px;
+    color: white;
+    font-size: 30px;
+    color: blue
+}
+h3 {
+    font-family: "BACKTO1982";
+    color: blue;
+    font-size: 90px;
+    text-align: left;
+    margin-left: 65%;
+    margin-top: 200px
+}
+h4 {
+    font-family: "BACKTO1982";
+    color: blue;
+    font-size: 90px;
+    margin-left: 30px;
+    margin-top: 400px;
+    float: left;
+    display: inline-block
+}
+h5 {
+    font-family: "BACKTO1982";
+    color: blue;
+    font-size: 90px;
+    text-align: left;
+    margin-left: 65%;
+    margin-top: 400px
+}
+h6 {
+    font-family: "BACKTO1982";
+    color: blue;
+    font-size: 90px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 300px
+}
+p {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    margin-top: -185px;
+    margin-left: 72%
+}
+p2 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 395px
+}
+.meh {
+    margin-top: 900px
+}
+p3 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    margin-top: -245px;
+    margin-left: 73.5%;
+    float: left
+}
+p4 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    float: left;
+    margin-left: 140px;
+    margin-top: -305px
+}
+p5 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    margin-top: -245px;
+    margin-left: 73.5%;
+    float: left
+}
+p6 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    float: left;
+    margin-left: 190px;
+    margin-top: -305px
+}
+p7 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-top: -15px;
+    margin-left: 72%;
+    width: 250px;
+    float: left;
+    letter-spacing: 1px; line-height: 19px
+}
+p8 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-top: 430px;
+    margin-left: -295px;
+    width: 250px;
+    float: left;
+    letter-spacing: 1px; line-height: 19px
+}
+p9 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-top: -185px;
+    margin-left: 73.5%;
+    width: 250px;
+    float: left;
+    letter-spacing: 1px; 
+	line-height: 19px
+}
+p10 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-top: -270px;
+    margin-left: 11%;
+    width: 250px;
+    float: left;
+    letter-spacing: 1px;
+	line-height: 19px
+}
+p11 {
+    font-family: ARCADE;
+    font-weight: lighter;
+    text-align: left;
+    color: blue;
+    font-size: 20px;
+    margin-top: -270px;
+    margin-left: 15%;
+    width: 250px;
+    float: left;
+    letter-spacing: 1px;
+	line-height: 19px;
+	
+}
+.one {
+    position: absolute;
+    margin-left: -10px;
+    z-index: -1;
+    margin-top: -6px;
+    opacity: 85%
+}
+.two {
+    position: absolute;
+    margin-left: 76.5%;
+    margin-top: 39%;
+    z-index: -1;
+    opacity: 85%
+}
+.three {
+    position: absolute;
+    margin-top: 79%;
+    z-index: -1;
+    opacity: 85%
+}
+.four {
+    position: absolute;
+    margin-top: 99%;
+    margin-left: 46%;
+    z-index: -1;
+    opacity: 75%
+}
+.five {
+    position: absolute;
+    margin-top: 137.5%;
+    z-index: -1;
+    opacity: 85%
+}
+.six {
+    position: absolute;
+    margin-top: 183.5%;
+    margin-left: 67%;
+    z-index: -1;
+    opacity: 85%
+}
+.sev {
+    position: absolute;
+    margin-top: 229%;
+    z-index: -1;
+    opacity: 85%
+}
+.eight {
+    position: absolute;
+    margin-top: 290%;
+    z-index: -1;
+    opacity: 75%
+}
+.nine {
+    position: absolute;
+    margin-top: 259%;
+    margin-left: 67%;
+    z-index: -1;
+    opacity: 85%
+}
+.ten {
+    position: absolute;
+    margin-top: 340%;
+    margin-left: 6.5%;
+    z-index: -1;
+    opacity: 85%
+}
+.ele {
+    position: absolute;
+    opacity: 0
+}
+
+@media only screen and (max-width: 800px) {
+h1 {
+    font-family: "BACKTO1982";
+    font-size: 70px;
+    margin-left: 2.5%;
+    color: white;
+    font-kerning: normal;
+    letter-spacing: 4.5px;
+    width: 100px;
+    line-height: 95px;
+    position: static
+}
+h2 {
+    margin-left: 2.5%
+}
+.two {
+    opacity: 0
+}
+h3 {
+    margin-left: 2.5%
+}
+p {
+    margin-left: 15%
+}
+p7 {
+    margin-left: 15%; font-size: 20px; line-height: 19px
+}
+.four {
+    opacity: 0
+}
+h4 {
+    margin-left: -350px
+}
+p2 {
+    margin-left: -250px
+}
+h6 {
+    margin-left: 2.5%
+}
+h5 {
+    margin-left: 2.5%
+}
+.six {
+    opacity: 0
+}
+p5 {
+    margin-left: 15%
+}
+p9 {
+    margin-left: 15%;
+    margin-top: -205px;
+	font-size: 20px; line-height: 19px
+}
+p10 {
+    margin-left: 15%; font-size: 20px; line-height: 19px
+}
+p4 {
+    margin-left: 15%
+}
+p6 {
+    margin-left: 25%
+}
+p11 {
+    margin-left: 25%; font-size: 20px; line-height: 19px
+}
+p3 {
+    margin-left: 15%
+}
+	p8{font-size: 20px; line-height: 19px}
+.five {
+    margin-top: 140%;
+    margin-left: 30%
+}
+.ten {
+    margin-left: -25.5%;
+    margin-top: 570%
+}
+.eight {
+    margin-left: -30%;
+    margin-top: 479%
+}
+.nine {
+    margin-top: 385%
+}
+.sev {
+    margin-top: 275%
+}
+.ele {
+    opacity: 75%;
+    margin-top: 370%;
+    margin-left: -27%
+}
+}
+</style>
+</head>
+
+<body>
+<img src="tetris shapes/1x/Asset 4.png" class="ele"> <img src="tetris shapes/1x/Asset 10.png"
+		 class= one> <img src="tetris shapes/1x/Asset 5.png" class= two> <img src="tetris shapes/1x/Asset 6.png" class= three> <img src="tetris shapes/1x/Asset 13.png" class=four> <img src="tetris shapes/1x/Asset 11.png" class= five> <img src="tetris shapes/1x/Asset 12.png" class=six> <img src="tetris shapes/1x/Asset 10.png" class= sev> <img src="tetris shapes/1x/Asset 1.png" class=eight> <img src="tetris shapes/1x/Asset 14.png" class=nine> <img src="tetris shapes/1x/Asset 15.png" class="ten">
+<h1>DIETER RAMS</h1>
+<h2>10 Principles of Good Design</h2>
+<h3>1</h3>
+<p>Good Design is Innovative</p>
+<p7>Design should be original, always coming up with new ideas and methods.</p7>
+<h4>2</h4>
+<p2>Good Design is Expressive</p2>
+<p8>Design should be expressive, whether of a brand or of an individual.</p8>
+<div class="meh">
+  <h5>3</h5>
+  <p3>Good Design is Environmentally Friendly</p3>
+  <p9>Design should be created sustainably and ethically.</p9>
+  <h6>4</h6>
+  <p4>Good Design Accomplishes a Goal</p4>
+  <p10>Design should accomplish the goal of the designer or company it represents.</p10>
+  <h5>5</h5>
+  <p5>Good Design Sends a Message</p5>
+  <p9>Good design sends a message from or about a brand, object, place or designer.</p9>
+  <h6>6</h6>
+  <p4>Good Design is Aesthetic</p4>
+  <p10>Good design is aesthetically pleasing, connecting us to our ability to appreciate the world around us.</p10>
+  <h5>7</h5>
+  <p5>Good Design is Long Lasting</p5>
+  <p9>Good design stays relevant and continues to draw people in over the years.</p9>
+  <h6>8</h6>
+  <p4>Good Design Draws a Reaction</p4>
+  <p10>Good design first draws you in, and then evokes emotion.</p10>
+  <h5>9</h5>
+  <p5>Good Design Uses Space Wisely</p5>
+  <p9>Design should use space wisely, ensuring that viewers are able understand and navigate easily.</p9>
+  <h6>10</h6>
+  <p6>Good Design is Adaptable</p6>
+  <p11>Design should be able to adjust to new conditions and be modified.</p11>
+</div>
+</body>
+</html>
