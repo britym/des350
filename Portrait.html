@@ -1,0 +1,881 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portrait</title>
+<style>
+.hair {
+    width: 220px;
+    height: 240px;
+    background: black;
+    border-radius: 50%;
+    margin-left: 450px;
+    margin-top: 65px;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.hair2 {
+    width: 170px;
+    height: 237px;
+    background: black;
+    border-radius: 50%;
+    margin-left: 522px;
+    margin-top: 73px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.neck {
+    width: 70px;
+    height: 50px;
+    background: #e2b08f;
+    position: absolute;
+    margin-top: 261px;
+    margin-left: 538px;
+    top: 0px;
+    left: 0px;
+}
+.circle1 {
+    width: 200px;
+    height: 200px;
+    background: #ffd1ae;
+    border-radius: 50%;
+    margin-left: 473px;
+    margin-top: 90px;
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+.circle2 {
+    width: 71px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffd1ae;
+    position: absolute;
+    margin-top: 237.5px;
+    margin-left: 538px;
+    top: 0px;
+    left: 0px
+}
+.lefteye {
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e2b08f;
+    position: absolute;
+    margin-top: 142.5px;
+    margin-left: 497.4px;
+    top: 0px;
+    left: 0px;
+}
+.righteye {
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e2b08f;
+    position: absolute;
+    margin-top: 142.5px;
+    margin-left: 583.5px;
+    top: 0px;
+    left: 0px
+}
+.lefteyeball {
+    width: 64px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-top: 159.5px;
+    margin-left: 497.5px;
+    top: 0px;
+    left: 0px;
+    animation-name: eyes;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease
+}
+.righteyeball {
+    width: 64px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-top: 159.5px;
+    margin-left: 583.5px;
+    top: 0px;
+    left: 0px;
+    animation-name: eyes;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease
+}
+.leftpupil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cc943a;
+    position: absolute;
+    margin-top: 162px;
+    margin-left: 514px;
+    top: 0px;
+    left: 0px
+}
+.lpup {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 167px;
+    margin-left: 519px;
+    top: 0px;
+    left: 0px
+}
+.rightpupil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cc943a;
+    position: absolute;
+    margin-top: 162px;
+    margin-left: 600px;
+    top: 0px;
+    left: 0px
+}
+.rpup {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 167px;
+    margin-left: 605px;
+    top: 0px;
+    left: 0px
+}
+.mouthline {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 10px 15px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(53deg);
+    margin-top: 163px;
+    margin-left: 525px;
+    animation-name: mouth;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.mole {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 272px;
+    margin-left: 594px;
+    top: 0px;
+    left: 0px;
+    animation-name: moley;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.bangs {
+    width: 190px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 450px;
+    transform: rotate(154deg);
+    top: 0px;
+    left: 0px;
+}
+.bangs2 {
+    width: 150px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 87.5px;
+    margin-left: 457px;
+    transform: rotate(154deg);
+    top: 0px;
+    left: 0px
+}
+.bangs3 {   width: 190px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 450px;
+    transform: rotate(154deg);
+    top: 0px;
+    left: 0px;
+   
+    animation-name: bangs;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite
+}
+.lash {
+    width: 2px;
+    height: 11px;
+    background: black;
+    position: absolute;
+    margin-top: 141px;
+    margin-left: 606px
+}
+.lash2 {
+    width: 2px;
+    height: 11px;
+    background: black;
+    position: absolute;
+    margin-top: 145.4px;
+    margin-left: 630px;
+    transform: rotate(25deg)
+}
+.lash3 {
+    width: 2px;
+    height: 11px;
+    background: black;
+    position: absolute;
+    margin-top: 145.4px;
+    margin-left: 543px;
+    transform: rotate(25deg)
+}
+.lash4 {
+    width: 2px;
+    height: 11px;
+    background: black;
+    position: absolute;
+    margin-top: 145.4px;
+    margin-left: 585px;
+    transform: rotate(-25deg)
+}
+.brow {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 10px 15px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(-147deg);
+    margin-top: 136px;
+    margin-left: 576px;animation-name: brow;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.noseline {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(135deg);
+    margin-left: 550px;
+    margin-top: 205px;
+    position: absolute;
+    animation-name: n;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.nose {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e2b08f;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 560px;
+    top: 0px;
+    left: 0px;
+    animation-name: n2;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.noseblocker {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    margin-top: 197px;
+    margin-left: 550px;
+    background: #ffd1ae;
+    animation-name: n3;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.nosebridge {
+    width: 13px;
+    height: 30px;
+    position: absolute;
+    margin-top: 195px;
+    margin-left: 555px;
+    background: #e2b08f;
+    animation-name: n4;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.longhair {
+    width: 350px;
+    height: 300px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 70px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    margin-top: 120px;
+    margin-left: 475px;
+    z-index: -1;
+    animation-name: hair;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.longhair2 {
+    width: 290px;
+    height: 270px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 70px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(-70deg);
+    margin-top: 115px;
+    margin-left: 208px;
+    z-index: -1;
+    animation-name: hair2;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.white {
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 400px;
+}
+.longhair3 {
+    width: 310px;
+    height: 270px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 70px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(75deg);
+    margin-top: 135px;
+    margin-left: 643.5px;
+    z-index: -1;
+    animation-name: hair3;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.white2 {
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 650px
+}
+.longhair4 {
+    width: 290px;
+    height: 270px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 70px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(70deg);
+    margin-top: 100px;
+    margin-left: 670px;
+    z-index: -1;
+    animation-name: hair4;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.longhair5 {
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 70px 0px -10px black;
+    border-radius: 50%;
+    transform: rotate(85deg);
+    margin-top: 95px;
+    margin-left: 675px;
+    z-index: -1;
+    animation-name: hair5;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.leaf {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0;
+    margin-top: 100px;
+    background-color: green;
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+.leaf2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0;
+    background-color: darkorange;
+    margin-left: -100px;
+	transform: rotate(45deg);
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+.leaf3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0;
+    margin-top: 50px;
+    background-color: red;
+	transform: rotate(-50deg);
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+.leaf4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0;
+    margin-top: 150px;
+    background-color: gold;
+	transform: rotate(90deg);
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+.leaf5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 0;
+    margin-top: 200px;
+    background-color: orangered;
+	transform: rotate(30deg);
+    margin-left: -100px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+@-webkit-keyframes move {
+0% {
+left: -100px;
+top: 0px
+}
+100% {
+left: 1800px;
+top: 500px
+}
+}
+@-webkit-keyframes eyes {
+0% {
+height: 35px
+}
+35% {
+height: 35px
+}
+50% {
+height:31.6px
+}
+75% {
+height: 31.6px
+}
+}
+@-webkit-keyframes mouth {
+0% {
+margin-top:163px
+}
+35% {
+margin-top: 163px
+}
+50% {
+margin-top: 158px
+}
+75% {
+margin-top: 158px
+}
+}
+	
+@-webkit-keyframes brow {
+0% {
+margin-top:136px
+}
+35% {
+margin-top: 136px
+}
+50% {
+margin-top: 140px
+}
+75% {
+margin-top: 140px
+}
+}	
+@-webkit-keyframes moley {
+0% {
+margin-top: 272px
+}
+35% {
+margin-top: 272px
+}
+50% {
+margin-top: 267px
+}
+75% {
+margin-top: 267px
+}
+}
+@-webkit-keyframes n {
+0% {
+margin-top: 205px
+}
+35% {
+margin-top: 205px
+}
+50% {
+margin-top: 203px
+}
+75% {
+margin-top: 203px
+}
+}
+@-webkit-keyframes n2 {
+0% {
+margin-top: 215px
+}
+35% {
+margin-top: 215px
+}
+50% {
+margin-top: 213px
+}
+75% {
+margin-top: 213px
+}
+}
+@-webkit-keyframes n3 {
+0% {
+margin-top: 197px
+}
+35% {
+margin-top: 197px
+}
+50% {
+margin-top: 195px
+}
+75% {
+margin-top: 195px
+}
+}
+@-webkit-keyframes n4 {
+0% {
+margin-top: 195px
+}
+35% {
+margin-top: 195px
+}
+50% {
+margin-top: 193px
+}
+75% {
+margin-top: 193px
+}
+}
+@-webkit-keyframes hair {
+0% {
+transform: rotate(90deg);
+margin-top: 120px;
+margin-left: 475px
+}
+35% {
+transform: rotate(90deg);
+margin-top: 120px;
+margin-left: 475px
+}
+50% {
+transform: rotate(80deg);
+margin-top: 110px;
+margin-left: 485px
+}
+60% {
+transform: rotate(85deg);
+margin-top: 115px;
+margin-left: 480px
+}
+75% {
+transform: rotate(80deg);
+margin-top: 110px;
+margin-left: 485px
+}
+	80%{transform: rotate(80deg);
+margin-top: 110px;
+margin-left: 485px}	
+}
+@-webkit-keyframes hair2{
+0% {
+transform: rotate(-70deg);
+margin-top: 115px;
+margin-left: 208px
+}
+35% {
+transform: rotate(-70deg);
+margin-top: 115px;
+margin-left: 208px
+}
+50% {
+transform: rotate(-80deg);
+margin-top: 125px;
+margin-left: 205.5px
+}
+
+75% {
+transform: rotate(-80deg);
+margin-top: 125px;
+margin-left: 205.5px
+}
+	80%{transform: rotate(-80deg);
+margin-top: 125px;
+margin-left: 205.5px}
+}
+@-webkit-keyframes hair3{
+0% {
+transform: rotate(75deg);
+margin-top: 135px;
+margin-left: 643.5px
+}
+35% {
+transform: rotate(75deg);
+margin-top: 135px;
+margin-left: 643.5px
+}
+50% {
+transform: rotate(67deg);
+margin-top: 120px;
+margin-left: 650px
+}
+	60%{transform: rotate(70deg);
+	margin-top: 125px;
+	margin-left:647px }	
+
+75% {
+transform: rotate(67deg);
+margin-top: 120px;
+margin-left: 650px
+}
+	80%{transform: rotate(67deg);
+margin-top: 120px;
+margin-left: 650px}
+}	
+	
+@-webkit-keyframes hair4{
+0% {
+transform: rotate(70deg);
+margin-top: 100px;
+margin-left: 670px
+}
+35% {
+transform: rotate(70deg);
+margin-top: 100px;
+margin-left: 670px
+}
+50% {
+transform: rotate(60deg);
+margin-top: 90px;
+margin-left: 660px
+}
+	60%{transform: rotate(65deg);
+	margin-top: 95px;
+	margin-left:665px }	
+
+75% {
+transform: rotate(60deg);
+margin-top: 90px;
+margin-left: 660px
+}
+	80%{transform: rotate(60deg);
+margin-top: 90px;
+margin-left: 660px}
+}	
+	@-webkit-keyframes hair5{
+0% {
+transform: rotate(85deg);
+margin-top: 95px;
+margin-left: 675px
+}
+35% {
+transform: rotate(85deg);
+margin-top: 95px;
+margin-left: 675px
+}
+50% {
+transform: rotate(75deg);
+margin-top: 80px;
+margin-left: 668px
+}
+	60%{transform: rotate(80deg);
+	margin-top: 90px;
+	margin-left:671px }	
+
+75% {
+transform: rotate(75deg);
+margin-top: 80px;
+margin-left: 668px
+}
+		80%{transform: rotate(75deg);
+margin-top: 80px;
+margin-left: 668px}
+}
+	@-webkit-keyframes bangs{
+0% {
+transform: rotate(154deg);
+margin-top: 108px;
+margin-left: 450px
+}
+35% {
+transform: rotate(154deg);
+margin-top: 108px;
+margin-left: 450px
+}
+50% {
+transform: rotate(150deg);
+margin-top: 120px;
+margin-left:440px
+}
+	
+
+75% {
+transform: rotate(150deg);
+margin-top: 120px;
+margin-left:440px
+}
+		80%{transform: rotate(150deg);
+margin-top: 120px;
+margin-left:440px}
+}
+	
+
+</style>
+</head>
+
+<body>
+<div class="me">
+  <div class="white"></div>
+  <div class="white2"></div>
+  <div class="hair"></div>
+  <div class="hair2"></div>
+  <div class="neck"></div>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="lefteye"></div>
+  <div class="righteye"></div>
+  <div class="lefteyeball"></div>
+  <div class="righteyeball"></div>
+  <div class="leftpupil"></div>
+  <div class="rightpupil"></div>
+  <div class="lpup"></div>
+  <div class="rpup"></div>
+  <div class="lips"></div>
+  <div class="mouthline"></div>
+  <div class="mouthl"></div>
+  <div class="mole"></div>
+  <div class="bangs"></div>
+  <div class="bangs2"></div>
+  <div class="bangs3"></div>
+  <div class="lash"></div>
+  <div class="lash2"></div>
+  <div class="lash3"></div>
+  <div class="lash4"></div>
+  <div class="brow"></div>
+  <div class="nose"></div>
+  <div class="noseblocker"></div>
+  <div class="nosebridge"></div>
+  <div class="noseline"></div>
+  <div class="longhair"></div>
+  <div class="longhair2"></div>
+  <div class="longhair3"></div>
+  <div class="longhair4"></div>
+  <div class="longhair5"></div>
+  <div class="leaf"></div>
+  <div class="leaf2"></div>
+  <div class="leaf3"></div>
+  <div class="leaf4"></div>
+  <div class="leaf5"></div>
+</div>
+</body>
+</html>
